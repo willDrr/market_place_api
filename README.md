@@ -1,24 +1,12 @@
-# README
+# API repository for the example project in book API on Rails 6 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Some of the points covered:
 
-Things you may want to cover:
+- Use Git for version control
+- Building JSON responses
+- Test your end-points with unit and functional tests
+- Set up authentication with JSON Web Tokens (JWT)
+- Use JSON:API specification
+- Optimize and cache the API 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+No views templates will be created for this Ruby on Rails api
