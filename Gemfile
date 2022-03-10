@@ -48,3 +48,5 @@ gem "faker", "~> 2.19"
 gem "jsonapi-serializer", "~> 2.2"
 
 gem "hirb", "~> 0.7.3"
+
+gem "annotate", "~> 3.2"

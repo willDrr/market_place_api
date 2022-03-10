@@ -1,3 +1,13 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id         :bigint           not null, primary key
+#  user_id    :bigint           not null
+#  total      :decimal(, )
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 require "test_helper"
 
 class OrderTest < ActiveSupport::TestCase
@@ -15,5 +25,16 @@ class OrderTest < ActiveSupport::TestCase
 
     total = @product1.price + @product2.price
     assert_equal total, order.total
+  end
+
+  test 'builds 2 placements for the order' do
+    @order.build_placements_with_product_ids_and_quantities [
+      { product_id: @product1.id, quantity: 2 },
+      { product_id: @product2.id, quantity: 3 },
+    ]
+
+    assert_difference('Placement.count', 2) do
+      @order.save
+    end
   end
 end

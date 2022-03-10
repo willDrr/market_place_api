@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id         :bigint           not null, primary key
+#  title      :string
+#  price      :decimal(, )
+#  published  :boolean
+#  user_id    :bigint           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  quantity   :integer          default(0)
+#
 require "test_helper"
 
 class ProductTest < ActiveSupport::TestCase
