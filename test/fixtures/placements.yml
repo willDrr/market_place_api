@@ -12,7 +12,9 @@
 one:
   order: one
   product: one
+  quantity: 5
 
 two:
   order: two
   product: two
+  quantity: 5
