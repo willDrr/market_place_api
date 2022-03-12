@@ -50,3 +50,5 @@ gem "jsonapi-serializer", "~> 2.2"
 gem "hirb", "~> 0.7.3"
 
 gem "annotate", "~> 3.2"
+
+gem "kaminari", "~> 1.2"
